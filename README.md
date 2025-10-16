@@ -161,7 +161,4 @@ No router port forwarding required.
 
 Logs available for monitoring.
 
-
-
----
-
+![wtf](https://github.com/user-attachments/assets/e0c9971a-f4c1-4592-a93a-8ee46d304d54)
