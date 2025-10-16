@@ -1,5 +1,3 @@
-Cloudflare Tunnel for Secure Remote RDP
-
 This repository provides a step-by-step guide to set up a secure Cloudflare Tunnel to access a Windows PC's Remote Desktop (RDP) from anywhere over the internet.
 
 Overview
@@ -129,5 +127,41 @@ Step 7: Connect from Remote PC
 
 
 
-cloudflared access
+cloudflared access rdp --hostname rdp.yourdomain.com
+
+3. Open Remote Desktop Connection → connect to localhost:3389.
+
+
+
+Step 8: Cloudflare Access Security (Optional)
+
+Enforce login via email/SSO.
+
+Enable MFA.
+
+
+Step 9: Troubleshooting
+
+Ensure no other cloudflared processes are running.
+
+Check config.yml indentation and Tunnel ID.
+
+Use Event Viewer: Windows Logs → Application → Cloudflared.
+
+Restart service after edits: Restart-Service cloudflared.
+
+
+Summary
+
+Tunnel runs persistently and securely.
+
+RDP accessible remotely via Cloudflare Access.
+
+No router port forwarding required.
+
+Logs available for monitoring.
+
+
+
+---
 
